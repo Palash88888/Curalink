@@ -1,0 +1,141 @@
+/* BACKGROUND */
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background: radial-gradient(circle at center, #020617, #000);
+  color: white;
+}
+
+/* CENTER */
+.main-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* BOX */
+.center-box {
+  width: 700px;
+  padding: 30px;
+  border-radius: 20px;
+  background: rgba(255,255,255,0.05);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255,255,255,0.1);
+  text-align: center;
+}
+
+/* TITLE */
+.subtitle {
+  color: #94a3b8;
+  margin-bottom: 20px;
+}
+
+/* SUGGESTIONS */
+.suggestions {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.suggestions button {
+  padding: 12px;
+  border-radius: 12px;
+  border: 1px solid #8b5cf6;
+  background: transparent;
+  color: white;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: 0.2s;
+}
+
+.suggestions button:hover {
+  background: linear-gradient(90deg, #8b5cf6, #22d3ee);
+}
+
+/* ICON */
+.icon {
+  font-size: 20px;
+}
+
+/* CHAT */
+.chat-box {
+  max-height: 200px;
+  overflow-y: auto;
+  margin-bottom: 15px;
+}
+
+/* MESSAGE */
+.msg {
+  margin: 8px 0;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.user {
+  background: #6366f1;
+  text-align: right;
+}
+
+.bot {
+  background: rgba(255,255,255,0.08);
+  color: #22d3ee;
+  text-align: left;
+}
+
+/* LOADING */
+.typing span {
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  margin: 2px;
+  background: #22d3ee;
+  border-radius: 50%;
+  animation: blink 1.4s infinite;
+}
+
+@keyframes blink {
+  0% { opacity: 0.2; }
+  50% { opacity: 1; }
+  100% { opacity: 0.2; }
+}
+
+/* INPUT */
+.input-bar {
+  display: flex;
+  gap: 10px;
+}
+
+.input-bar input {
+  flex: 1;
+  padding: 12px;
+  border-radius: 10px;
+  border: none;
+}
+
+.input-bar button {
+  padding: 12px;
+  border-radius: 10px;
+  border: none;
+  background: #22d3ee;
+  cursor: pointer;
+}
+.layout {
+  display: flex;
+  height: 100vh;
+}
+
+.sidebar {
+  width: 220px;
+  background: #020617;
+  padding: 20px;
+  border-right: 1px solid #1e293b;
+}
+
+.main {
+  flex: 1;
+  padding: 20px;
+}
